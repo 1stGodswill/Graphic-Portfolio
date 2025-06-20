@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jane Doe | Graphic Designer</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const links = document.querySelectorAll("a[href^='#']");
+        for (let link of links) {
+          link.addEventListener("click", function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute("href")).scrollIntoView({
+              behavior: "smooth",
+            });
+          });
+        }
+      });
+    </script>
+  </head>
+  <body class="bg-gray-50 text-gray-800 font-sans scroll-smooth">
+    <!-- Landing Page Section -->
+    <section
+      class="h-screen flex items-center justify-center bg-indigo-700 text-white text-center"
+    >
+      <div>
+        <h1 class="text-6xl md:text-8xl font-extrabold tracking-wide">
+          Godswill Edojah
+        </h1>
+        <p class="text-2xl md:text-3xl mt-4">Creative Graphic Designer</p>
+        <nav class="mt-10 space-x-6 text-lg">
+          <a href="#about" class="hover:underline">About</a>
+          <a href="#portfolio" class="hover:underline">Portfolio</a>
+          <a href="#contact" class="hover:underline">Contact</a>
+          <a
+            href="resume.pdf"
+            class="hover:underline border px-4 py-2 rounded bg-white text-indigo-700 font-semibold"
+            download
+            >Download Resume</a
+          >
+        </nav>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 px-4 text-center bg-white animate-fade-in">
+      <h2 class="text-6xl font-bold mb-4">About Me</h2>
+      <p class="max-w-3xl mx-auto text-3xl">
+        I'm a passionate graphic designer with over 5 years of experience
+        crafting bold and meaningful visual identities. From logos and posters
+        to complete branding systems, I help businesses and individuals express
+        their essence through stunning visuals.
+      </p>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-16 px-4 bg-gray-100 animate-fade-in">
+      <h2 class="text-4xl font-bold text-center mb-10">Portfolio</h2>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto"
+      >
+        <img
+          src="images/project1.jpg"
+          alt="Project 1"
+          class="rounded shadow-md"
+        />
+        <img
+          src="images/project2.jpg"
+          alt="Project 2"
+          class="rounded shadow-md"
+        />
+        <img
+          src="images/project3.jpg"
+          alt="Project 3"
+          class="rounded shadow-md"
+        />
+        <img
+          src="images/project4.jpg"
+          alt="Project 4"
+          class="rounded shadow-md"
+        />
+        <img
+          src="images/project5.jpg"
+          alt="Project 5"
+          class="rounded shadow-md"
+        />
+        <img
+          src="images/project6.jpg"
+          alt="Project 6"
+          class="rounded shadow-md"
+        />
+        <img
+          src="images/project7.jpg"
+          alt="Project 4"
+          class="rounded shadow-md"
+        />
+        <img
+          src="images/project8.png"
+          alt="Project 5"
+          class="rounded shadow-md"
+        />
+        <img
+          src="images/project9.jpg"
+          alt="Project 6"
+          class="rounded shadow-md"
+        />
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section
+      id="contact"
+      class="py-16 px-4 text-center bg-white animate-fade-in"
+    >
+      <h2 class="text-6xl font-bold mb-4">Get In Touch</h2>
+      <p class="text-4xl mb-6">
+        Want to work together or have a question? Let's connect.
+      </p>
+      <p class="text-3xl">
+        Email:
+        <a
+          href="godswilledojah1@gmail.com"
+          class="text-indigo-600 text-3xl hover:underline"
+          >godswilledojah1@gmail.com</a
+        >
+      </p>
+      <p class="text-3xl">
+        WhatsApp:
+        <a
+          href="https://wa.me/2349020240926"
+          target="_blank"
+          class="text-green-600 text-3xl hover:underline"
+        >
+          Chat me on WhatsApp
+        </a>
+      </p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-indigo-700 text-white text-center py-6">
+      <p>&copy; 2025 Jane Doe | All rights reserved.</p>
+    </footer>
+
+    <!-- Animation Styles -->
+    <style>
+      .animate-fade-in {
+        animation: fadeIn 1s ease-in forwards;
+        opacity: 0;
+      }
+      @keyframes fadeIn {
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
+  </body>
+</html>
